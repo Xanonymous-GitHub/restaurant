@@ -4,6 +4,8 @@
     color="red"
     dark
   >
+    <v-icon left x-large>mdi-food</v-icon>
+    <v-toolbar-title><b>我就吃!</b></v-toolbar-title>
   </v-app-bar>
 </template>
 

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Main from '@/views/Main.vue'
-//import BackGround from "@/components/BackGround.vue";
+import HomePage from "@/pages/HomePage.vue";
 
 Vue.use(VueRouter);
 
@@ -11,13 +11,13 @@ const routes = [
     path: '/',
     name: 'Main',
     component: Main,
-    // children:[
-    //   {
-    //     path:'/',
-    //     name:'BackGround',
-    //     component:BackGround
-    //   }
-    // ]
+    children:[
+      {
+        path:'/',
+        name:'HomePage',
+        component:HomePage
+      }
+    ]
   }
 ];
 

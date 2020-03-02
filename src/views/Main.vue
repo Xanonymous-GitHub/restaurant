@@ -1,8 +1,9 @@
 <template>
   <v-app id="inspire">
     <Bar/>
-    <router-view/>
-    <BackGround/>
+    <v-content>
+      <router-view/>
+    </v-content>
   </v-app>
 </template>
 
@@ -10,12 +11,12 @@
   import {Vue, Component} from 'vue-property-decorator'
 
   const Bar = () => import("@/components/Bar.vue");
-  const BackGround = () => import("@/components/BackGround.vue");
+  const HomePage = () => import("@/pages/HomePage.vue");
 
   @Component({
     components: {
       Bar,
-      BackGround
+      HomePage
     }
   })
   export default class Main extends Vue {
