@@ -1,23 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const BackGround = () => import("@/components/BackGround.vue");
+import Main from '@/views/Main.vue'
+//import BackGround from "@/components/BackGround.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'BackGround',
-    component: BackGround
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'Main',
+    component: Main,
+    // children:[
+    //   {
+    //     path:'/',
+    //     name:'BackGround',
+    //     component:BackGround
+    //   }
+    // ]
   }
 ];
 
