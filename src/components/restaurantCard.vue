@@ -1,11 +1,13 @@
 <template>
   <v-card
-    class="mx-auto"
-    max-width="400"
+    class="mx-auto my-2"
+    hover
+    max-width="600" width="80%"
+    shaped
   >
     <v-img
       class="white--text align-end"
-      height="200px"
+      max-height="150px"
       src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
       <v-card-title>Top 10 Australian beaches</v-card-title>
