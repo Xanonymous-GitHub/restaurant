@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 
 import Main from '@/views/Main.vue'
 import HomePage from "@/pages/HomePage.vue";
-import Result from "@/pages/Result.vue";
 
 Vue.use(VueRouter);
 
@@ -12,16 +11,11 @@ const routes = [
     path: '/',
     name: 'Main',
     component: Main,
-    children: [
+    children:[
       {
-        path: '/',
-        name: 'HomePage',
-        component: HomePage
-      },
-      {
-        path: 'result',
-        name: 'Result',
-        component: Result
+        path:'/',
+        name:'HomePage',
+        component:HomePage
       }
     ]
   }
