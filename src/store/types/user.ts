@@ -4,7 +4,7 @@ export interface User {
   level: UserLevel;
   avatar?: string;
   description?: string;
-  verified?: boolean;
+  verified: number;
 }
 
 export enum UserLevel {
@@ -13,3 +13,4 @@ export enum UserLevel {
   GAMMA = 'gamma',
   OMEGA = 'omega'
 }
+

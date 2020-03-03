@@ -1,7 +1,16 @@
 <!--suppress HtmlUnknownTarget -->
 <template>
   <v-card class="my-1 noOutLine" max-height="220" max-width="600" width="80%">
-    <v-img :src="user.avatar" class="mx-3 my-3 float-right" max-height="50" max-width="50" right></v-img>
+    <v-img :src="user.avatar" class="mx-3 my-3 float-right " max-height="50" max-width="50" right></v-img>
+    <template #placeholder>
+      <v-row
+        align="center"
+        class="fill-height ma-0"
+        justify="center"
+      >
+        <v-progress-circular color="grey lighten-5" indeterminate></v-progress-circular>
+      </v-row>
+    </template>
     <v-card-text>
       <p class="display-1 text--primary font-weight-bold">
         {{user.name}}

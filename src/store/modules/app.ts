@@ -12,7 +12,7 @@ const state: AppState = {
     level: UserLevel.ALPHA,
     avatar: require("@/assets/Xanonymousico512fixed.png"),
     description: "Eat more slow can let u eat more, Majaja.",
-    verified:undefined
+    verified: 1
   }
 };
 
