@@ -19,7 +19,7 @@ const state: AppState = {
       name: "I AM PASTA",
       subName: "Italian restaurant",
       description: "very very good!",
-      rating: Rating.FIVE
+      rating: Rating.THREE
     }
   }
 ;

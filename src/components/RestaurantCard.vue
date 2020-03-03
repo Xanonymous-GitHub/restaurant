@@ -10,10 +10,12 @@
       max-height="150px"
       src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
-      <v-card-title class="display-1 text--primary font-weight-bold">{{restaurant.name}}</v-card-title>
+      <v-card-title class="display-1 font-weight-bold">{{restaurant.name}}</v-card-title>
     </v-img>
 
-    <v-card-subtitle class="pb-0">{{restaurant.subName}}</v-card-subtitle>
+    <v-card-subtitle class="pb-0">{{restaurant.subName}}
+      <Rating :user-rate="restaurant.rating"/>
+    </v-card-subtitle>
 
     <v-card-text class="text--primary">
       <div>{{restaurant.description}}</div>
@@ -40,12 +42,18 @@
 <script lang="ts">
   import {Vue, Component} from 'vue-property-decorator'
   import {AppState} from "@/store/types/app";
+  import Rating from "@/components/Rating.vue"
   import {
     Getter,
   } from 'vuex-class'
 
-  @Component
+  @Component({
+    components: {
+      Rating
+    }
+  })
   export default class RestaurantCard extends Vue {
-    @Getter("restaurant", {namespace: 'app'}) private restaurant!: AppState['restaurant'];
+    @Getter('restaurant', {namespace: 'app'})
+    public restaurant!: AppState['restaurant'];
   }
 </script>

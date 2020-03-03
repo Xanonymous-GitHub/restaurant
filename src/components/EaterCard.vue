@@ -41,7 +41,8 @@
 
   @Component
   export default class EaterCard extends Vue {
-    @Getter('user', {namespace: 'app'}) private user!: AppState['user'];
+    @Getter('user', {namespace: 'app'})
+    public user!: AppState['user'];
   }
 </script>
 <style lang="scss" scoped>
