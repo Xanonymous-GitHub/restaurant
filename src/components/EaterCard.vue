@@ -25,17 +25,14 @@
 </template>
 <script lang="ts">
   import {Vue, Component} from 'vue-property-decorator'
+  import {AppState} from "@/store/types/app";
+  import {
+    Getter,
+  } from 'vuex-class'
 
   @Component
   export default class EaterCard extends Vue {
-    private user = {
-      id: "Xanonymous",
-      name: "TeU Lin",
-      level: "Alpha",
-      avatar: require("@/assets/Xanonymousico512fixed.png"),
-      description: "Eat more slow can let u eat more, Majaja.",
-      verified: true
-    };
+    @Getter('user', {namespace: 'app'}) private user!: AppState;
   }
 </script>
 <style lang="scss" scoped>

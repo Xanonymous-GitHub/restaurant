@@ -4,7 +4,7 @@
       <v-col cols="12">
         <v-btn block color="deep-purple accent-4" dark>
           <v-icon class="mx-2">mdi-lightbulb-on</v-icon>
-          Get A Eat Place!
+          Get An Eat Place!
         </v-btn>
       </v-col>
     </v-row>
