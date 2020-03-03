@@ -51,7 +51,7 @@
     }
   })
   export default class HomePage extends Vue {
-    private bgSrc = require("@/assets/chicken.svg");
+    private bgSrc = require("@/assets/images/chicken.svg");
   }
 
 </script>

@@ -10,7 +10,7 @@ const state: AppState = {
     id: "Xanonymous",
     name: "TeU Lin",
     level: UserLevel.ALPHA,
-    avatar: require("@/assets/Xanonymousico512fixed.png"),
+    avatar: require("@/assets/images/Xanonymousico512fixed.png"),
     description: "Eat more slow can let u eat more, Majaja.",
     verified: 1
   }
