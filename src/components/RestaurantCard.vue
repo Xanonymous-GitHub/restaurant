@@ -2,7 +2,7 @@
   <v-card
     class="mx-auto my-2"
     hover
-    max-width="600" width="80%"
+    max-width="800" width="80%"
     shaped
   >
     <v-img
