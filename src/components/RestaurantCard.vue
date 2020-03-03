@@ -2,23 +2,21 @@
   <v-card
     class="mx-auto my-2"
     hover
-    max-width="800" width="80%"
-    shaped
+    max-width="800" shaped
+    width="80%"
   >
     <v-img
       class="white--text align-end"
       max-height="150px"
       src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
-      <v-card-title>Top 10 Australian beaches</v-card-title>
+      <v-card-title class="display-1 text--primary font-weight-bold">{{restaurant.name}}</v-card-title>
     </v-img>
 
-    <v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
+    <v-card-subtitle class="pb-0">{{restaurant.subName}}</v-card-subtitle>
 
     <v-card-text class="text--primary">
-      <div>Whitehaven Beach</div>
-
-      <div>Whitsunday Island, Whitsunday Islands</div>
+      <div>{{restaurant.description}}</div>
     </v-card-text>
 
     <v-card-actions>
@@ -41,9 +39,13 @@
 
 <script lang="ts">
   import {Vue, Component} from 'vue-property-decorator'
+  import {AppState} from "@/store/types/app";
+  import {
+    Getter,
+  } from 'vuex-class'
 
   @Component
   export default class RestaurantCard extends Vue {
-
+    @Getter("restaurant", {namespace: 'app'}) private restaurant!: AppState['restaurant'];
   }
 </script>
