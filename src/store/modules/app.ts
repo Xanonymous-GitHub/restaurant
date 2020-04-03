@@ -11,12 +11,13 @@ const state: AppState = {
       id: "Xanonymous",
       name: "TeU Lin",
       level: UserLevel.ALPHA,
-      avatar: require("@/assets/Xanonymousico512fixed.png"),
+      avatarUrl: require("@/assets/Xanonymousico512fixed.png"),
       description: "Eat more slow can let u eat more, Majaja.",
       verified: 1
     },
     restaurant: {
       name: "I AM PASTA",
+      avatarUrl: require("@/assets/Xanonymousico512fixed.png"),
       subName: "Italian restaurant",
       description: "very very good!",
       rating: Rating.THREE

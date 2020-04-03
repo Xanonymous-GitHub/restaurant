@@ -6,9 +6,9 @@
     width="80%"
   >
     <v-img
+      src="@/assets/Xanonymousico512fixed.png"
       class="white--text align-end"
       max-height="150px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
       <v-card-title class="display-1 font-weight-bold">{{restaurant.name}}</v-card-title>
     </v-img>

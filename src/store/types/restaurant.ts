@@ -1,7 +1,8 @@
 export interface Restaurant {
   name: string;
+  avatarUrl?: string;
   subName: string;
-  description: string;
+  description?: string;
   rating: Rating;
 }
 

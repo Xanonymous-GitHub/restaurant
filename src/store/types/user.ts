@@ -2,7 +2,7 @@ export interface User {
   id: string;
   name: string;
   level: UserLevel;
-  avatar?: string;
+  avatarUrl?: string;
   description?: string;
   verified: number;
 }
