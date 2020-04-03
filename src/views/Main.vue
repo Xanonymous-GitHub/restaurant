@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <Bar/>
     <v-content>
-      <router-view/>
+      <router-view class="transition-group"/>
     </v-content>
   </v-app>
 </template>
